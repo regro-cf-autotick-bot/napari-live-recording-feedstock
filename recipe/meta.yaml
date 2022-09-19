@@ -1,13 +1,13 @@
 {% set name = "napari-live-recording" %}
-{% set version = "0.1.7" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_live_recording-{{ version }}.tar.gz
-  sha256: 04c367550953ffe60949e53c0c02d436660aa523047b9c92d833b78cf096ae53
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 6b02288ebf6f136f552611472795ecece572af8853ae08bac8e68c0a81966066
 
 build:
   noarch: python
@@ -25,7 +25,8 @@ requirements:
     - napari-plugin-engine >=0.1.4
     - numpy
     - opencv
-    - pyqt
+    - qtpy
+    - superqt
     - python >=3.6,<3.10
 
 test:
