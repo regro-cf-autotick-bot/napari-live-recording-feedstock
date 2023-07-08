@@ -1,11 +1,11 @@
-About napari-live-recording
-===========================
+About napari-live-recording-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-live-recording-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jethro33/napari-live-recording
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-live-recording-feedstock/blob/main/LICENSE.txt)
 
 Summary: A napari plugin for live video recording with a generic camera device.
 
