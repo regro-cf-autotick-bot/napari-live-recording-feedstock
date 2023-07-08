@@ -1,5 +1,5 @@
 {% set name = "napari-live-recording" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6b02288ebf6f136f552611472795ecece572af8853ae08bac8e68c0a81966066
+  sha256: 13558f3ffc80608b669b624e0dcd53a62b0ab8e60c8a0da6c9695f6539cdb6ad
 
 build:
   noarch: python
