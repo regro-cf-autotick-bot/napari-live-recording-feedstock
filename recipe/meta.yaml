@@ -25,9 +25,11 @@ requirements:
     - napari-plugin-engine >=0.1.4
     - numpy
     - opencv
+    - pymmcore-plus
+    - python >=3.6,<3.10
     - qtpy
     - superqt
-    - python >=3.6,<3.10
+    - tifffile
 
 test:
   imports:
