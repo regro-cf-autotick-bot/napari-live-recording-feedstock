@@ -1,5 +1,5 @@
 {% set name = "napari-live-recording" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6b02288ebf6f136f552611472795ecece572af8853ae08bac8e68c0a81966066
+  sha256: 13558f3ffc80608b669b624e0dcd53a62b0ab8e60c8a0da6c9695f6539cdb6ad
 
 build:
   noarch: python
@@ -20,29 +20,34 @@ requirements:
     - python >=3.6,<3.10
     - setuptools-scm
   run:
-    - dask-image
+    # - h5py  # Listed but unused
     - napari
-    - napari-plugin-engine >=0.1.4
     - numpy
+    # - np-image-buffer  # Listed but unused
     - opencv
+    - pymmcore-plus >=0.6.7
+    - pymmcore-widgets
+    - python >=3.6,<3.10
     - qtpy
     - superqt
-    - python >=3.6,<3.10
+    - tifffile
 
 test:
   imports:
     - napari_live_recording
   commands:
     - pip list
-    # - pip check
+    # - pip check  # Fails due to opencv-contrib and listed but unused dependencies
   requires:
     - pip
+    - pyqt
 
 about:
-  home: https://github.com/jethro33/napari-live-recording
+  home: https://pypi.org/project/napari-live-recording
   summary: A napari plugin for live video recording with a generic camera device.
   license: MIT
   license_file: LICENSE
+  dev_url: https://github.com/jacopoabramo/napari-live-recording
 
 extra:
   recipe-maintainers:
