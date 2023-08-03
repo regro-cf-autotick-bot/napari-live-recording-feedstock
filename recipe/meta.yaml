@@ -26,6 +26,7 @@ requirements:
     - numpy
     - opencv
     - pymmcore-plus
+    - pymmcore-widgets
     - python >=3.6,<3.10
     - qtpy
     - superqt
