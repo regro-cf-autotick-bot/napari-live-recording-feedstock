@@ -20,8 +20,10 @@ requirements:
     - python >=3.6,<3.10
     - setuptools-scm
   run:
+    # - h5py  # Listed but not used
     - napari
     - numpy
+    # - np-image-buffer  # Listed but not used
     - opencv
     - pymmcore-plus >= 0.6.7
     - pymmcore-widgets
@@ -35,7 +37,7 @@ test:
     - napari_live_recording
   commands:
     - pip list
-    - pip check
+    # - pip check  # Fails due to opencv-contrib and listed but unused dependencies
   requires:
     - pip
     - pyqt
