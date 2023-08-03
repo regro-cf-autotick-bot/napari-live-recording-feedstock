@@ -20,12 +20,12 @@ requirements:
     - python >=3.6,<3.10
     - setuptools-scm
   run:
-    # - h5py  # Listed but not used
+    # - h5py  # Listed but unused
     - napari
     - numpy
-    # - np-image-buffer  # Listed but not used
+    # - np-image-buffer  # Listed but unused
     - opencv
-    - pymmcore-plus >= 0.6.7
+    - pymmcore-plus >=0.6.7
     - pymmcore-widgets
     - python >=3.6,<3.10
     - qtpy
