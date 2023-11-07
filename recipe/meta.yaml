@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm
   run:
     # - h5py  # Listed but unused
+    - microscope
     - napari
     - numpy
     # - np-image-buffer  # Listed but unused
