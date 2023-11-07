@@ -1,5 +1,5 @@
 {% set name = "napari-live-recording" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 13558f3ffc80608b669b624e0dcd53a62b0ab8e60c8a0da6c9695f6539cdb6ad
+  sha256: 258cc6f92c899acc1c2b81b4761e5a59bee47a9d17b678ea06bf29612e0d6392
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm
   run:
     # - h5py  # Listed but unused
+    - microscope
     - napari
     - numpy
     # - np-image-buffer  # Listed but unused
