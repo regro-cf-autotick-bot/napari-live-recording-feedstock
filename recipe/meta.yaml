@@ -17,14 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.10
+    - python >=3.9,<3.12
     - setuptools-scm
   run:
     # - h5py  # Listed but unused
     - microscope
     - napari
     - numpy
-    # - np-image-buffer  # Listed but unused
     - opencv
     - pymmcore-plus >=0.6.7
     - pymmcore-widgets
