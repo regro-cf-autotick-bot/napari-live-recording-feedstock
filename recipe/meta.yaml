@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,6 +25,7 @@ requirements:
     - napari
     - numpy
     - opencv
+    - pyqtgraph
     - pymmcore-plus >=0.6.7
     - pymmcore-widgets
     - python >=3.9,<3.12
@@ -37,7 +38,7 @@ test:
     - napari_live_recording
   commands:
     - pip list
-    # - pip check  # Fails due to opencv-contrib and listed but unused dependencies
+    - pip check
   requires:
     - pip
     - pyqt
