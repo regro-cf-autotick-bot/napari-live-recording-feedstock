@@ -20,7 +20,7 @@ requirements:
     - python >=3.9,<3.12
     - setuptools-scm
   run:
-    # - h5py  # Listed but unused
+    - pims
     - microscope
     - napari
     - numpy
